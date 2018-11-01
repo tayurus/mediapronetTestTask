@@ -5,6 +5,36 @@ html(lang="ru")
         include ../blocks/header/header.jade
 
         main
+            section.section
+                h2.title.title_search РЕЗУЛЬТАТ ПОИСКА
+                
+                - var rowCount = 20;
+                    .table
+                        .table__row.table__row-header
+                            .table__th Планировка
+                            .table__th Комнатность
+                            .table__th Площадь
+                            .table__th Цена
+                            .table__row_border100vw
+                        .table__body
+                            - for (var i = 0; i < rowCount; i++)
+                                .table__row
+                                    a.table__row-link(href="#")
+                                    
+                                    .table__cell
+                                        img.table__product-img(src='img/table-product-image.png', alt='планировка')
+                                        
+                                    .table__cell
+                                        .table__text Двухкомнатная №14
+                                        .table__text Корпус 24, Секция 1
+                                        
+                                    .table__cell
+                                        span.table__text 48м
+                                        sup.table__text.table__text_small 2
+                                        
+                                    .table__cell
+                                        .table__text.table__text_purple 3 680 476 руб
 
 
+                
         include ../blocks/footer/footer.jade

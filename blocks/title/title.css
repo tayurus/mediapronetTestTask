@@ -1,0 +1,10 @@
+.title {
+  font-family: "Myriad Pro";
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+.title_search {
+  margin-bottom: 10rem;
+}

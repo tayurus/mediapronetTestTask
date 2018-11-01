@@ -1,0 +1,80 @@
+.table__body {
+  max-height: 64rem;
+  overflow: auto;
+}
+
+.table .table__th {
+  font-family: "FiraSansExtraCondensed-Black";
+  text-transform: uppercase;
+}
+
+.table .table__cell {
+  padding: 2.2rem 0;
+}
+
+.table__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 80rem;
+  padding: 2.2rem 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.table__row-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.table__row:not(.table__row-header):hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.table__row-header {
+  padding-top: 40px;
+  max-width: 70rem;
+}
+
+.table__product-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.table__text_small {
+  font-size: 0.8rem;
+}
+
+.table__text {
+  line-height: 2.5rem;
+  font-family: "FiraSansExtraCondensed-Black";
+}
+
+.table__text_purple {
+  color: #af2565;
+}
+
+/* CUSTOM SCROLLBAR */
+/* width */
+.table__body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+/* Track */
+.table__body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* Handle */
+.table__body::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+}
+
+/* Handle on hover */
+.table__body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
