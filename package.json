@@ -1,0 +1,34 @@
+{
+  "name": "webpage-template",
+  "version": "1.0.0",
+  "description": "template for any webpage using jade, BEM and gulp",
+  "main": "gulpFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tayurus/webpage-template.git"
+  },
+  "keywords": [
+    "webpage-template"
+  ],
+  "author": "tayurus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tayurus/webpage-template/issues"
+  },
+  "homepage": "https://github.com/tayurus/webpage-template#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-stylus": "^2.7.0"
+  }
+}
