@@ -28,15 +28,17 @@ html(lang="ru")
             - for (var i = 0; i < rowCount; i++)
               .row.table__row
                 a.table__row-link(href="#")
-                .col-md-3
+                .col-md-3.table__cell.table__cell_img
                   img.table__product-img(src='img/table-product-image.png', alt='планировка')
-                .col-md-3
+                .col-md-3.table__cell.table__cell_title
                   .table__text Двухкомнатная №14
                   .table__text Корпус 24, Секция 1
-                .col-md-3
+                .col-md-3.table__cell
+                  .table__th.table__th_mobile Площадь
                   .table__text 48м
                     sup 2
-                .col-md-3
+                .col-md-3.table__cell.table__cell_price
+                  .table__th.table__th_mobile Цена
                   .table__text.table__text_purple 3 680 476 руб
                   
           .table__underline.table__underline_bottom

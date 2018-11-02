@@ -8,3 +8,9 @@
 .title_search {
   margin-bottom: 7.9rem;
 }
+
+@media (max-width: 767px), (max-device-width: 767px) {
+  .title_search {
+    font-size: 2.4rem;
+  }
+}

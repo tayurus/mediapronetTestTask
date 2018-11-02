@@ -18,10 +18,6 @@
   background: #cccccc70;
 }
 
-.table__row [class^="col-"] {
-  padding: 0;
-}
-
 .table__row_head {
   margin-bottom: 2.4rem;
 }
@@ -29,6 +25,10 @@
 .table .table__th {
   font-family: "FiraSansExtraCondensed-Black";
   text-transform: uppercase;
+}
+
+.table__th_mobile {
+  display: none;
 }
 
 .table__row-link {
@@ -91,4 +91,40 @@
 /* Handle on hover */
 .table__body::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media (max-width: 767px), (max-device-width: 767px) {
+  .table__row_head {
+    display: none;
+  }
+
+  .table__row {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+
+  .table__cell_img {
+    border-bottom: 1px solid #ebebeb;
+    padding: 4.5rem 0;
+  }
+
+  .table__cell_title,
+  .table__cell_price {
+    padding: 4.5rem 0;
+  }
+
+  .table__th_mobile {
+    display: block;
+  }
+
+  .table__cell {
+    text-align: center;
+  }
+
+  .table__row:not(.table__row_head) {
+    width: 90%;
+    margin: 0px auto;
+    border: 1px solid #ebebeb;
+  }
 }
