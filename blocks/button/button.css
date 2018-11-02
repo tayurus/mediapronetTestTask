@@ -1,3 +1,23 @@
-button{
-    outline: none;
+.button {
+  color: #ffffff;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  background: #af2565;
+  padding: 2.1rem 7.8rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #af2585;
+}
+
+@media (max-width: 767px), (max-device-width: 767px) {
+  .button {
+    padding: 2.1rem 6.7rem;
+  }
 }

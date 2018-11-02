@@ -7,11 +7,11 @@
 .table__row {
   padding: 2.2rem 0;
   align-items: center;
-  position: relative;
 }
 
 .table__row:not(.table__row_head) {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 0.1rem solid #ebebeb;
+  position: relative;
 }
 
 .table__row:not(.table__row_head):hover {
@@ -43,14 +43,14 @@
 .table__underline {
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 0.1rem;
   left: 0;
   background: #ebebeb;
   z-index: 1;
 }
 
 .table__underline_top {
-  transform: translateY(54px);
+  transform: translateY(5.4rem);
 }
 
 .table__product-img {
@@ -64,7 +64,8 @@
 
 .table__text {
   line-height: 2.5rem;
-  font-family: "FiraSansExtraCondensed-Black";
+  font-family: "FiraSansExtraCondensed";
+  font-weight: bold;
 }
 
 .table__text_purple {
@@ -109,6 +110,10 @@
     padding: 4.5rem 0;
   }
 
+  .table__text_bold-md {
+    font-family: "FiraSansExtraCondensed-Black";
+  }
+
   .table__cell_title,
   .table__cell_price {
     padding: 4.5rem 0;
@@ -119,12 +124,12 @@
   }
 
   .table__cell {
-    text-align: center;
+    padding-left: calc(50% - 5.5rem);
   }
 
   .table__row:not(.table__row_head) {
-    width: 90%;
-    margin: 0px auto;
-    border: 1px solid #ebebeb;
+    width: 97%;
+    margin: 0 auto 4rem auto;
+    border: 0.1rem solid #ebebeb;
   }
 }
