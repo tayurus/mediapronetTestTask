@@ -1,25 +1,34 @@
 .table__body {
-  max-height: 64rem;
-  overflow: auto;
+  max-height: 59rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.table__row {
+  padding: 2.2rem 0;
+  align-items: center;
+  position: relative;
+}
+
+.table__row:not(.table__row_head) {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.table__row:not(.table__row_head):hover {
+  background: #cccccc70;
+}
+
+.table__row [class^="col-"] {
+  padding: 0;
+}
+
+.table__row_head {
+  margin-bottom: 2.4rem;
 }
 
 .table .table__th {
   font-family: "FiraSansExtraCondensed-Black";
   text-transform: uppercase;
-}
-
-.table .table__cell {
-  padding: 2.2rem 0;
-}
-
-.table__row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  max-width: 80rem;
-  padding: 2.2rem 0;
-  border-bottom: 1px solid #ebebeb;
 }
 
 .table__row-link {
@@ -28,16 +37,20 @@
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
-.table__row:not(.table__row-header):hover {
-  cursor: pointer;
-  background-color: #ccc;
+.table__underline {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background: #ebebeb;
+  z-index: 1;
 }
 
-.table__row-header {
-  padding-top: 40px;
-  max-width: 70rem;
+.table__underline_top {
+  transform: translateY(54px);
 }
 
 .table__product-img {
@@ -67,6 +80,7 @@
 /* Track */
 .table__body::-webkit-scrollbar-track {
   background-color: #fff;
+  margin: 1rem 0;
 }
 
 /* Handle */
